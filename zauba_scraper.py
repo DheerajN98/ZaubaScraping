@@ -87,7 +87,7 @@ def crawl(produrl, collection):
             if cat_count > 399990:
                 # Making a recursive call to the "crawl" function as limit exceeds of sub-category URL
                 produrl = cat_url1
-                crawl(produrl, COLLECTION)
+                crawl(produrl, collection)
             else:
                 # Determining the number of pages to crawl
                 try:
