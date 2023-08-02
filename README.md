@@ -4,14 +4,23 @@
 
 This repository contains a Python script that performs web scraping on the website "Zaubacorp" to extract company data and store it in a MongoDB database. The script uses the requests library to send HTTP requests to the website, lxml for parsing the HTML response, and pymongo to connect to and interact with the MongoDB database.
 
+## Features
+<ul>
+<li>Random user agent selection for request headers to mimic real browser requests.</li>
+<li>Handling of page crawl limit based on category and sub-category URLs from the "Filter By" section of the website.</li>
+<li>Data extraction and insertion into a MongoDB database.</li>
+<li>Error handling for various exceptions during web scraping.</li>
+</ul>
 
 ## Installation and Setup
 
 Before running the script, you need to have the following installed:
-
-Python: Make sure you have Python installed on your system. You can download it from the official Python website: https://www.python.org/downloads/
-
-MongoDB: You need to have a MongoDB server set up or use a cloud-hosted MongoDB service like MongoDB Atlas: https://www.mongodb.com/cloud/atlas
+<ul>
+<li>Python: Make sure you have Python installed on your system. You can download it from the official Python website: https://www.python.org/downloads/</li>
+<li>MongoDB: You need to have a MongoDB server set up or use a cloud-hosted MongoDB service like MongoDB Atlas: https://www.mongodb.com/cloud/atlas</li>
+<li>Requests library (pip install requests)</li>
+<li>lxml library (pip install lxml)</li>
+</ul>
 
 <h2>Configuration:</h2>
 Before running the script, you need to configure the MongoDB connection URL and provide your MongoDB cluster credentials. Modify the CONNECTION_URL variable in the 
